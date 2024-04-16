@@ -29,7 +29,7 @@
 
             <!-- Start: Header Top -->
             <div id="header-top" class="bg-dark">
-                <div class="container d-none d-md-block d-lg-block">
+                <div class="container header-top-container d-none d-md-block d-lg-block">
                     <div class="d-flex justify-content-between align-items-center py-1">
                         <span class="header-top-notice text-white my-auto fw-light" style="font-size: 13px;">Hội sale
                             quốc
@@ -52,8 +52,8 @@
             <!-- End: Header Top -->
 
             <!-- Navbar -->
-            <div id="navbar-container" class="navbar navbar-expand-lg bg-light">
-                <div class="container">
+            <div id="navbar" class="navbar navbar-expand-lg bg-light">
+                <div class="container navbar-container">
                     <a href="home.html" class="navbar-brand d-flex justify-content-between align-items-center me-auto">
                         <img src="../assets/images/logo.png" alt="brand" style="height: 50px;">
                         <span class="text-black text-uppercase ms-2">WatchStore</span>
@@ -69,16 +69,16 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                                 <li class="nav-item menu-item">
-                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2 active">Home</a>
+                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2 active">Trang chủ</a>
                                 </li>
                                 <li class="nav-item menu-item">
-                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Shop</a>
+                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Sản phẩm</a>
                                 </li>
                                 <li class="nav-item menu-item">
-                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Blogs</a>
+                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Tin tức</a>
                                 </li>
                                 <li class="nav-item menu-item">
-                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Contact Us</a>
+                                    <a href="#" class="nav-link menu-link text-uppercase mx-lg-2">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -123,7 +123,8 @@
 
         <!-- Start: Banner Top -->
         <div id="banner-top">
-            <div class="container h-100 d-flex flex-column align-items-left justify-content-center">
+            <div
+                class="container banner-top-container h-100 d-flex flex-column align-items-left justify-content-center">
                 <div class="row mb-1">
                     <p class="text-uppercase fs-5" style="letter-spacing: 3px;">&mdash; Thế giới đồng hồ</p>
                 </div>
@@ -138,23 +139,268 @@
                     <p class="text-uppercase fs-5" style="letter-spacing: 3px;">Đẹp tinh tế đến từng centimet</p>
                 </div>
                 <div class="btn-block">
-                    <a href="#" class="shop-btn">Shop Now &nbsp;<i class="fa-solid fa-hand-pointer"></i></a>
-                    <a href="#" class="play-btn"><i class="fa-regular fa-circle-play"></i> Watch video</a>
+                    <a href="#" class="shop-btn">Mua ngay &nbsp;<i class="fa-solid fa-hand-pointer"></i></a>
+                    <a href="#" class="play-btn"><i class="fa-regular fa-circle-play"></i> Xem video</a>
                 </div>
 
             </div>
         </div>
         <!-- End: Banner Top -->
 
-        <div class="container">
-            
-        </div>
+        <!-- Start: Best Seller -->
+        <div id="box-best-seller">
+            <div class="container products-container">
+                <div class="products-heading">
+                    <h2>Sản phẩm bán chạy nhất</h2>
+                </div>
 
-        <!-- Start: Box Products -->
-        <div id="products">
-            <div class="container product-container">
-                <div class="product-heading">
-                    <h3>Sản Phẩm</h3>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h6 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex Lorem ipsum dolor sit, amet </a>
+                                </h6>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="direction-btn slider-control-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="direction-btn slider-control-next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <!-- End: Best Seller -->
+
+        <!-- Start: Products Latest -->
+        <div id="products-latest">
+            <div class="container products-container">
+                <div class="products-heading">
+                    <h2>Sản phẩm mới nhất</h2>
                 </div>
 
                 <div class="slider-container">
@@ -304,16 +550,100 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="../assets/images/product/DongHo.jpg" alt="Đồng hồ nam">
+                            <div class="product-body">
+                                <h5 class="product-title">
+                                    <a href="#">Đồng hồ nam Rolex</a>
+                                </h5>
+                                <div class="product-price">
+                                    <span class="product-price-old">30.000.000đ</span>
+                                    <span class="product-price-current">29.899.000đ</span>
+                                </div>
+                                <div class="product-review">
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="product-sold">100 đã bán</span>
+                                </div>
+                                <ul class="product-icons-list">
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                </ul>
+                                <div class="product-cart">
+                                    <a href="#" class="product-cart-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <button id="slider-control-prev" class="direction-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                <button id="slider-control-next" class="direction-btn"><i
-                        class="fa-solid fa-chevron-right"></i></button>
+                <button class="direction-btn slider-control-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="direction-btn slider-control-next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
-        <!-- End: Box Products -->
+        <!-- End: Products Latest -->
 
         <!-- Start: Coming Soon Banner -->
         <div id="coming-soon-banner" class="my-40">
@@ -321,38 +651,38 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-block">
-                            <h1 class="title mb-24">COMING SOON</h1>
+                            <h2 class="title mb-24 text-uppercase">Sắp ra mắt</h2>
                             <ul class="countdown unstyled">
                                 <li>
                                     <div>
                                         <h2>0</h2>
                                         <h2>0</h2>
                                     </div>
-                                    <h5>DAYS</h5>
+                                    <h5>NGÀY</h5>
                                 </li>
                                 <li>
                                     <div>
-                                        <h2>0</h2>
-                                        <h2>0</h2>
+                                        <h2>2</h2>
+                                        <h2>3</h2>
                                     </div>
-                                    <h5>HRS</h5>
+                                    <h5>GIỜ</h5>
                                 </li>
                                 <li>
                                     <div>
-                                        <h2>0</h2>
-                                        <h2>0</h2>
+                                        <h2>5</h2>
+                                        <h2>9</h2>
                                     </div>
-                                    <h5>MIN</h5>
+                                    <h5>PHÚT</h5>
                                 </li>
                                 <li>
                                     <div>
-                                        <h2>0</h2>
-                                        <h2>0</h2>
+                                        <h2>5</h2>
+                                        <h2>9</h2>
                                     </div>
-                                    <h5>SEC</h5>
+                                    <h5>GIÂY</h5>
                                 </li>
                             </ul>
-                            <h5 class="sub-text dark-gray">New Collection Will be Out When Counter Hits Zero</h5>
+                            <h5 class="sub-text">Bộ sưu tập mới sẽ ra mắt khi số lượt đếm về 0</h5>
                         </div>
                     </div>
                 </div>
@@ -362,114 +692,113 @@
 
         <!-- Start: Box Blogs -->
         <div id="box-blogs">
-            <div class="container blog-container">
-                <div class="blog-heading">
-                    <h3>Blogs</h3>
+            <div class="container blogs-container">
+                <div class="blogs-heading">
+                    <h3>Tin tức</h3>
                 </div>
 
                 <div class="slider-container">
                     <div class="slider">
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-card">
-                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="...">
+                            <img src="../assets/images/blogs/smart-watch.jpg" class="card-img" alt="smart-watch">
                             <div class="text-block">
-                                <p class="category-tag">Men’s Watches</p>
-                                <h5 class="card-content">Icons of Time: The Most Iconic Watches of All Time
-                                </h5>
+                                <p class="category-tag">Đồng hồ nam</p>
+                                <h6 class="card-content">Top 10 đồng hồ nam đáng mua nhất hiện tại
+                                </h6>
                                 <div class="bottom-row d-flex justify-content-between align-items-center">
                                     <div class="author d-flex align-items-center">
                                         <img src="../assets/images/users/user-1.jpg" class="author-img" alt="">
-                                        <p class="author-name m-0 mx-2">James Smith</p>
+                                        <p class="author-name m-0 mx-2"></p>
                                     </div>
-                                    <a href="blog-detail.html" class="h6 card-link color-primary" tabindex="0">Read
-                                        More<i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#" class="h6 card-link color-primary" tabindex="0">Đọc thêm<i
+                                            class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button id="slider-control-prev" class="direction-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                <button id="slider-control-next" class="direction-btn"><i
-                        class="fa-solid fa-chevron-right"></i></button>
+                <button class="direction-btn slider-control-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="direction-btn slider-control-next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
         <!-- End: Box Blogs -->
@@ -488,8 +817,8 @@
                     </a>
                     <form action="" class="newsletter-form">
                         <div class="newsletter">
-                            <input type="text" name="Email" placeholder="Your Email">
-                            <button type="submit" class="subs-btn">Subscribe</button>
+                            <input type="text" name="Email" placeholder="Email của bạn">
+                            <button type="submit" class="subs-btn">Đăng ký</button>
                         </div>
                     </form>
                 </div>
@@ -497,51 +826,51 @@
                     <div class="row">
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget mb-xl-0">
-                                <h4 class="footer-title">Quick Links</h4>
+                                <h4 class="footer-title">Về chúng tôi</h4>
                                 <ul class="list">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">Blogs</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Giới thiệu công ty</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Điều khoản thanh toán</a></li>
+                                    <li><a href="#">Chính sách bảo mật</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget mb-xl-0">
-                                <h4 class="footer-title">Categories</h4>
+                                <h4 class="footer-title">Sản phẩm</h4>
                                 <ul class="list">
-                                    <li><a href="#">Man’s Watches</a></li>
-                                    <li><a href="#">Women’s Watches</a></li>
-                                    <li><a href="#">Unisex Watches</a></li>
-                                    <li><a href="#">Fashion Watches</a></li>
+                                    <li><a href="#">Đồng hồ nam</a></li>
+                                    <li><a href="#">Đồng hồ nữ</a></li>
+                                    <li><a href="#">Đồng hồ cao cấp</a></li>
+                                    <li><a href="#">Đồng hồ thời trang</a></li>
+                                    <li><a href="#">Đồng hồ thể thao</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget mb-sm-0">
-                                <h4 class="footer-title">Your Account</h4>
+                                <h4 class="footer-title">Tài khoản</h4>
                                 <ul class="list">
-                                    <li><a href="#">New Account</a></li>
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">Register</a></li>
-                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Tạo tài khoản</a></li>
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                    <li><a href="#">Giỏ hàng</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget mb-xl-0">
-                                <h4 class="footer-title">Contact Info</h4>
+                                <h4 class="footer-title">Thông tin liên hệ</h4>
                                 <ul class="list contact-list">
-                                    <li><a href=""><i class="fa-solid fa-map-location-dot"></i>123 Main Street,
-                                            Anytown, CA 12345 - USA.</a></li>
-                                    <li><a href=""><i class="fa-solid fa-phone"></i>+001 123 456 789</a></li>
+                                    <li><a href=""><i class="fa-solid fa-map-location-dot"></i>Nguyễn Văn Bảo, Gò Vấp, Tp.HCM</a></li>
+                                    <li><a href=""><i class="fa-solid fa-phone"></i>+84 0123 456 789</a></li>
                                     <li><a href=""><i class="fa-regular fa-envelope"></i>email@example.com</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget">
-                                <h4 class="footer-title">Social Links</h4>
+                                <h4 class="footer-title">Kết nối với chúng tôi</h4>
                                 <ul class="list social-links">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -551,7 +880,7 @@
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                             <div class="footer-widget">
-                                <h4 class="footer-title">Payment Method</h4>
+                                <h4 class="footer-title">Thanh toán</h4>
                                 <ul class="list payment-method">
                                     <li><a href=""><i class="fa-brands fa-cc-visa"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-cc-mastercard"></i></a></li>
@@ -562,7 +891,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <p class="copyright-text">©2023 Chrono Store All Rights Reserved.</p>
+                    <p class="copyright-text">© All rights reserved - Bản quyền thuộc về WatchStore.</p>
                 </div>
             </div>
         </footer>
