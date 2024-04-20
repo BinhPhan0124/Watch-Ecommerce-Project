@@ -1,4 +1,4 @@
-/* Reset css */
+/* __________ RESET CSS __________ */
 *,
 *::before,
 *::after {
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Custom property */
+/* __________ CUSTOM PROPERTY __________ */
 :root {
     /* Colors */
     --primary-color: #7d6155;
@@ -61,7 +61,7 @@ input::placeholder {
     font: inherit;
 }
 
-/* Slider form */
+/* _____ SLIDER FORM _____ */
 .slider-container {
     position: relative;
     width: 1320px;
@@ -82,6 +82,7 @@ input::placeholder {
     margin: 0 -10px;
 }
 
+/* _____ DIRECTION BUTTON _____ */
 .direction-btn {
     width: 30px;
     height: 40px;
@@ -100,17 +101,17 @@ input::placeholder {
     position: absolute;
     top: 50%;
     left: 15px;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 }
 
 .slider-control-next {
     position: absolute;
     top: 50%;
     right: 15px;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 }
 
-/* ----- Product card ----- */
+/* ______ PRODUCT CARD ______ */
 .product-card {
     position: relative;
     width: 200px;
@@ -285,11 +286,11 @@ input::placeholder {
     color: var(--white-color);
 }
 
-/* ======================= Main ======================= */
+/* ==================== MAIN ==================== */
 
-/* ======================= Header wrapper ======================= */
+/* ========== HEADER WRAPPER ========== */
 
-/* ----- Header top ----- */
+/* ______ HEADER TOP ______ */
 #header-top .header-top-container {
     padding: 0 10px;
 }
@@ -312,7 +313,7 @@ input::placeholder {
     color: var(--primary-color);
 }
 
-/* ----- Navbar ----- */
+/* ______ NAVBAR ______ */
 #navbar {
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.2);
 }
@@ -322,6 +323,7 @@ input::placeholder {
 }
 
 #navbar .nav-right-link {
+    position: relative;
     color: var(--secondary-color);
 }
 
@@ -330,8 +332,18 @@ input::placeholder {
     color: var(--primary-color);
 }
 
-#navbar .nav-right-link:last-child {
-    padding-right: 0;
+.nav-right-link .count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background: var(--primary-color);
 }
 
 #navbar .menu-link {
@@ -377,15 +389,25 @@ input::placeholder {
     outline: none;
 }
 
-/* ======================= Content wrapper ======================= */
+.navbar-social {
+    display: none;
+}
+
+/* ______ MOBILE BOTTOM NAV ______ */
+.mobile-bottom-nav {
+    display: none;
+}
+
+
+/* ========== CONTENT WRAPPER ========== */
 #content-wrapper {
     margin-top: 108px;
 }
 
-/* ----- Banner top ----- */
+/* ______ BANNER TOP ______ */
 #banner-top {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-image: url(../images/hero-banner.png);
     object-fit: contain;
 }
@@ -403,18 +425,18 @@ input::placeholder {
     height: 50px;
     font-size: 18px;
     font-weight: 600;
-    padding: 14px 24px;
+    padding: 10px 20px;
     transition: 0.5s;
 }
 
 #banner-top .shop-btn {
     color: var(--black-color);
     background-color: var(--white-color);
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-md);
 }
 
 #banner-top .shop-btn i {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #banner-top .shop-btn:hover {
@@ -428,15 +450,15 @@ input::placeholder {
 }
 
 #banner-top .play-btn i {
-    font-size: 26px;
-    padding: 12px;
+    font-size: 22px;
+    padding: 10px;
     margin-right: 6px;
     color: var(--black-color);
     background-color: var(--white-color);
     border-radius: 50%;
 }
 
-/* ----- Best seller ----- */
+/* ______ BEST SELLER ______ */
 #box-best-seller {
     padding: 10px 0;
     margin-top: 60px;
@@ -483,7 +505,7 @@ input::placeholder {
     border-color: transparent #e90000;
 }
 
-/* ----- Products latest ----- */
+/* ______ PRODUCTS LATEST ______ */
 #products-latest {
     padding: 10px 0;
     margin-top: 30px;
@@ -530,7 +552,7 @@ input::placeholder {
     border-color: transparent #ffea00;
 }
 
-/* ----- Coming soon banner ----- */
+/* ______ COMING SOON BANNER ______ */
 #coming-soon-banner {
     position: relative;
     width: 100%;
@@ -564,7 +586,7 @@ input::placeholder {
     z-index: 2;
 }
 
-#coming-soon-banner .text-block > h5 {
+#coming-soon-banner .text-block>h5 {
     font-size: 18px;
     padding: 0 60px;
     color: var(--primary-color);
@@ -598,7 +620,7 @@ input::placeholder {
     margin-bottom: 20px;
 }
 
-/* ----- Box blogs ----- */
+/* ______ BOX BLOGS ______ */
 #box-blogs {
     padding: 10px 0;
     margin-top: 30px;
@@ -614,6 +636,7 @@ input::placeholder {
 }
 
 .blog-card {
+    max-width: 100%;
     width: 310px;
     height: 360px;
     margin: 10px;
@@ -621,26 +644,6 @@ input::placeholder {
     border-radius: 20px;
     background-color: var(--background-color);
     scroll-snap-align: start;
-}
-
-@media screen and (max-width: 992px) {
-    .blog-card {
-        width: calc((100vw - 20px) / 2);
-    }
-
-    .direction-btn {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .blog-card {
-        width: calc(100vw - 20px);
-    }
-
-    .direction-btn {
-        display: none;
-    }
 }
 
 .blog-card .card-img {
@@ -696,7 +699,7 @@ input::placeholder {
     margin-top: 3px;
 }
 
-/* ----- Footer ----- */
+/* ========== FOOTER ========== */
 #footer {
     background-color: var(--black-color);
     margin-top: 40px;
@@ -805,4 +808,94 @@ input::placeholder {
     color: var(--text-light-color);
     margin: 0;
     text-align: center;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media screen and (max-width: 992px) {
+    /* ______ HEADER TOP ______ */
+    .header-top-socials {
+        display: none;
+    }
+    
+    /* ______ NAVBAR ______ */
+    .navbar-brand {
+        margin: auto;
+    }
+    
+    #navbar .navbar-action {
+        display: none;
+    }
+
+    .navbar-social {
+        display: block;
+    }
+
+    .navbar-social .social-list {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .navbar-social .social-link {
+        padding: 5px 0;
+        color: var(--white-color);
+        background: var(--secondary-color);
+        border-radius: 5px;
+    }
+    
+    .navbar-social .social-link i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    /* ______ MOBILE BOTTOM NAV ______ */
+    .mobile-bottom-nav {
+        display: flex;
+    }
+
+    .mobile-bottom-nav {
+        background: var(--white-color);
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 5;
+    }
+
+    .mobile-bottom-nav .action-btn {
+        position: relative;
+        padding: 10px;
+        color: var(--secondary-color);
+    }
+
+    .mobile-bottom-nav .action-btn i {
+        font-size: 22px;
+    }
+
+    .mobile-bottom-nav .count {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        line-height: 18px;
+        border-radius: 50%;
+        color: var(--white-color);
+        background: var(--primary-color);
+    }
 }
